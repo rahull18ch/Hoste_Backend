@@ -8,11 +8,11 @@ const {updateStatus,getStudentComplaintStatus,getAllComplaintStatsForAdmin,getAl
 const{delete_complain}=require("../controller/delete")
 const {addAnnouncement,getAllAnnouncements}=require("../controller/add_annoucement")
 const {getStudentComplaints,getAllComplaintsForAdmin }=require("../controller/getdetails");
-
+const {ragChat}=require("../controller/chatContoller")
 
 const { signupRequest, verifyAndRegister} = require("../controller/create");
 
-
+router.post("/chat",ragChat); 
 // get route  electrict
 
 // New OTP-first registration routes
